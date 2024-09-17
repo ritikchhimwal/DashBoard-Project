@@ -13,7 +13,7 @@ const Dashboard = () => {
   const [cards, setCards] = useState([]);
 
   const fetchData = () => {
-    fetch("http://localhost:4000/cards")
+    fetch("https://dash-board-project-rouge.vercel.app//cards")
       .then((res) => res.json())
       .then((data) => {
         setCards(data);
